@@ -169,8 +169,14 @@ public class Sudoku {
 			}
 		});
 		
-		panel.add(board, BorderLayout.NORTH);
-		panel.add(control, BorderLayout.SOUTH);
+		JPanel wrapper = new JPanel(new BorderLayout());
+		wrapper.add(board, BorderLayout.CENTER);
+
+		control.setPreferredSize(new Dimension(500, 50));  
+		wrapper.add(control, BorderLayout.SOUTH);
+
+		panel.add(wrapper, BorderLayout.CENTER);
+
 		frame.add(panel);
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

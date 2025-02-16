@@ -12,6 +12,6 @@ Here are the screenshots:
 
 Here is the demo of the app:
 
-[Watch the video](roll_dice_app_video.mp4)
+[Watch the video](video.mp4)
 
 (You have to download the video to watch it)
